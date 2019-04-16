@@ -17,23 +17,27 @@ function displayGif() {
             // Only taking action if the photo has an appropriate rating
             // if (results[i].rating !== "r" && results[i].rating !== "pg-13") {
             // Creating a div for the gif
-            const gifDiv = $("<div>");
+            const gifDiv = $(`<div class=${"imgGif"}>`);
 
             // Storing the result item's rating
             const rating = results[i].rating;
 
             // Creating a paragraph tag with the result item's rating
-            const paragraph = $("<p>").text("Rating: " + rating);
+            const paragraph = $("<p>").text(`Rating: ${rating}`);
 
             // Creating an image tag
             const gifImage = $("<img>");
-
+            
+            // Creating space between img
+            const spacing = $("<br>");
+            
             // Giving the image tag an src attribute of a proprty pulled off the
             // result item
             gifImage.attr("src", results[i].images.fixed_height.url);
 
             // Appending the paragraph and gifImage we created to the "gifDiv" div we created
             gifDiv.append(paragraph);
+            gifDiv.append(spacing);
             gifDiv.append(gifImage);
 
             // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
@@ -76,11 +80,11 @@ $("#add-gif").on("click", function (event) {
     // Adding movie from the textbox to our array
     keyword.push(gifphy);
 
-    // Calling renderButtons which handles the processing of our movie array
+    // Calling renderButtons which handles the processing of our array
     renderButtons();
 });
 
-// Adding a click event listener to all elements with a class of "movie-btn"
+// Adding a click event listener to all elements 
 $(document).on("click", ".movie-btn", displayGif);
 
 // Calling the renderButtons function to display the intial buttons

@@ -4,7 +4,6 @@ body{
   font-size: 20px;
   font-family: 'Roboto Slab', serif;
   color: rgb(255, 255, 255);
-  font-weight: 300;
   background: url("../images/abstract-dark-background-hd-wallpapers-65843-7481891.png") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -52,4 +51,9 @@ input:hover{
 #gif-input{
     background-color: white;
     color: black
+}
+.imgGif{
+  position: relative;
+  float: left;
+  margin: 10px;
 }
