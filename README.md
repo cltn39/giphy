@@ -13,4 +13,4 @@ you can enable rating restriction by removing // in game.js line 18 & line 48.
 
 ## Demo:
 [https://cltn39.github.io/giphy/](https://cltn39.github.io/giphy/)
-[![screenshot.png](https://i.postimg.cc/qvtc6wy6/screenshot.png)](https://postimg.cc/qNT698mp)
+[![screenshot.png](https://i.postimg.cc/qvtc6wy6/screenshot.png)](https://cltn39.github.io/giphy/)
