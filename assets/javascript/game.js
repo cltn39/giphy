@@ -1,6 +1,5 @@
 
-const keyword = ["cat", "dog", "turtle", "lion"];
-
+let keyword = JSON.parse(sessionStorage.getItem("gifbutton"));
 function displayGif() {
     let gif = $(this).attr("data-name");
     const limit = "&limit=10";
@@ -38,7 +37,7 @@ function displayGif() {
                 // Giving the image tag an src attribute of a proprty pulled off the
                 // result item
                 gifImage.attr("src", imgLink);
-                
+
                 gifDownload.attr({
                     href: imgLink,
                     download: true
@@ -91,10 +90,18 @@ $("#add-gif").on("click", function (event) {
 
     // Calling renderButtons which handles the processing of our array
     renderButtons();
+    // Save the keyword arrays into local storage
+   sessionStorage.setItem("gifbutton", JSON.stringify(keyword));
+    // Clear the textbox when done
+    $("#gif-input").val("");
 });
 
 // Adding a click event listener to all elements 
 $(document).on("click", ".movie-btn", displayGif);
+
+if (!Array.isArray(keyword)) {
+    keyword = ["cat", "dog", "turtle", "lion"];
+};
 
 // Calling the renderButtons function to display the intial buttons
 renderButtons();
@@ -106,7 +113,3 @@ $(".movie-btn").on("click", function () {
     countClick++;
     console.log(countClick);
 })
-//Html tag that has download
-//Built-in the anchor tag 
-//Google html anchor download 
-//possibly store data into local storage or session storage instead.
