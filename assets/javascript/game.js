@@ -89,3 +89,12 @@ $(document).on("click", ".movie-btn", displayGif);
 
 // Calling the renderButtons function to display the intial buttons
 renderButtons();
+
+//plan to add additonal features
+//Track how many times I have clicked 
+//Write a function that multiplies  
+//Built in api query string 'offset' 
+//Html tag that has download 
+//Built into the anchor tag 
+//Google html anchor download 
+//possibly store data into local storage or session storage instead.
