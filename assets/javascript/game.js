@@ -5,7 +5,7 @@ function displayGif() {
     const limit = "&limit=10";
     let offset = "&offset=" + countClick + "0"
     let queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-        gif + "&api_key=dc6zaTOxFJmzC" + limit + offset;
+        gif + "&api_key=3zzvVvDvum5u8aTl9QYkTYkVjxZxrvpb" + limit + offset;
 
     $.ajax({
         url: queryURL,
