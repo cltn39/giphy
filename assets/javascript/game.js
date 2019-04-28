@@ -38,10 +38,6 @@ function displayGif() {
                 // result item
                 gifImage.attr("src", imgLink);
 
-                gifDownload.attr({
-                    href: imgLink,
-                    download: true
-                });
                 // Appending the paragraph and gifImage we created to the "gifDiv" div we created
                 gifDiv.append(paragraph);
                 gifDiv.append(spacing);
