@@ -7,7 +7,7 @@ this API search engine was built using jQuery& Javascript, HTML5, CSS3, and goog
 
 Data persistency was achieved by session storage.
 
-##Additional features:
+## Additional features:
 - you can now request addition gifs of same categories if you click same button twice.
 - You can now get redirected to the original gif url and can download it 
 
